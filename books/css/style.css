@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* Basic */
 
@@ -13,11 +13,14 @@ html,
 body,
 .Container {
 	height: 100%;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
 }
 
 body {
-	background-color: #e9e8e6;
+	background-color: #ffff;
 }
 
 .btn {
@@ -52,7 +55,7 @@ h2 {
 
 p {
 	color: #000;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: "Outfit", sans-serif;
 	font-size: 1.2rem;
 }
 
@@ -79,7 +82,7 @@ p {
 	top: 0;
 	width: 100%;
 	padding: 1.8rem 1rem;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: "Outfit", sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -396,8 +399,8 @@ p {
 .swiper-container {
 	width: 100%;
 	height: 100%;
-	margin-bottom: 5rem;
-	margin-top: -4rem;
+	margin-bottom: 0rem;
+	margin-top: 0rem;
 }
 
 @media (max-width: 1200px) {
@@ -437,62 +440,6 @@ p {
 
 .works {
 	font-size: 1.2em;
-	padding-top: 1rem;
+	padding-top: 5rem;
 	padding-bottom: 0rem;
-}
-
-
-/* Studio */
-
-.studio {
-	font-size: 1.2em;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-}
-
-
-/* Contact */
-
-.contact {
-	font-size: 1.8em;
-	padding-top: 15rem;
-	padding-bottom: 10rem;
-}
-
-
-/* Contact Form */
-
-.contact-form {
-	font-size: 1.2em;
-	padding-bottom: 11rem;
-}
-
-.contact-form .btn-primary {
-	color: #fff;
-	background-color: #000;
-	border-color: #000;
-}
-
-.contact-form .form-control {
-	color: #000;
-	background-color: transparent;
-	border-color: #000;
-	border-width: 0 0 2px 0;
-	border-radius: 0;
-	border-style: solid;
-	font-size: 1.5rem;
-}
-
-.form-control::-webkit-input-placeholder {
-	color: #000;
-	opacity: 0.6;
-}
-
-.form-control {
-	padding: 1.5rem 16rem 1.5rem 0.75rem
-}
-
-.contact-form .btn {
-	padding: 0.8rem 4rem;
-	border-radius: 5px;
 }
