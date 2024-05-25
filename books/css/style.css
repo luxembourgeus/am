@@ -2,12 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* Basic */
-
-* {
-	margin: 0;
-	padding: 0;
-}
 
 html,
 body,
@@ -23,15 +17,12 @@ body {
 	background-color: #ffff;
 }
 
-.btn {
-	border-radius: 0;
-}
 
 a:link,
 a:hover,
 a:visited {
 	text-decoration: none;
-	color: #000;
+	color: #FF2400;
 }
 
 a:link.white,
@@ -54,7 +45,7 @@ h2 {
 }
 
 p {
-	color: #000;
+	color: #FF2400;
 	font-family: "Outfit", sans-serif;
 	font-size: 1.2rem;
 }
