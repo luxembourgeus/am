@@ -14,7 +14,26 @@
       <link href="books/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
       <link href="books/css/style.css" rel="stylesheet" type="text/css"/>
       <style type="text/css">
-      </style>
+        /* Next Button */
+        .swiper-button-next {
+            background-image: url('books/img/plus.png'); /* Replace 'path/to/your/image-next.png' with the path to your next button image */
+            background-size: contain; /* Ensure the image fits within the button */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            width: 40px; /* Adjust width */
+            height: 40px; /* Adjust height */
+            /* You can also adjust other properties like position, color, etc. */
+        }
+
+        /* Previous Button */
+        .swiper-button-prev {
+            background-image: url('books/img/minus.png'); /* Replace 'path/to/your/image-prev.png' with the path to your previous button image */
+            background-size: contain; /* Ensure the image fits within the button */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            width: 40px; /* Adjust width */
+            height: 40px; /* Adjust height */
+            /* You can also adjust other properties like position, color, etc. */
+        }
+</style>
    </head>
    <body>
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -26,7 +45,7 @@
                <span class="icon-bars custom-toggler navbar-toggler-icon"></span>
             </div>
          </div>
-         <div id="toggle-nav" class="navbar-collapse collapse">
+         <!--<div id="toggle-nav" class="navbar-collapse collapse">
     <ul class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link" href="index.html">
@@ -34,18 +53,20 @@
             </a>
         </li>
     </ul>
-</div>
+</div>-->
       </nav>
-     <!--  <!-- Works -->
-      <!--<div class="container-fluid works wow fadeInDown">
+<!-- Works -->
+      <div class="container-fluid works wow fadeInDown">
          <div class="row justify-content-center">
             <div class="col-xl-6 col-md-8 col-sm-12">
                <p class="text-center">
-                  These are my books.
+            <a class="nav-link" href="index.html">
+                <img src="books/img/back.png" alt="Home">
+            </a>
                </p>
             </div>
          </div>
-      </div>-->
+      </div>
       <!-- End Works -->
       <!-- Swiper -->
       <div class="swiper-container">
