@@ -1,43 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag -->
   <title>Tayfun Luxembourgeus</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="books/style.css">
+<link rel="stylesheet" href="books/style.css">
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container">
-  <ul class="slides">
-    <li id="slide1"><img src="books/img/transboundary.jpg" alt=""/></li>
-    <li id="slide2"><img src="books/img/cannes.jpg" alt="" /></li>
-    <li id="slide3"><img src="books/img/yoldaki.jpg" alt="" /></li>
-    <li id="slide4"><img src="books/img/esek.jpg" alt="" /></li>
-    <li id="slide5"><img src="books/img/wave.jpg" alt="" /></li>
-  </ul>
+<svg id="icons" xmlns="http://www.w3.org/2000/svg">  
+<symbol id="icon-arrow" viewBox="0 0 476.213 476.213" >
+<polygon fill="inherit" points="347.5,324.393 253.353,418.541 253.353,0 223.353,0 223.353,419.033 128.713,324.393 107.5,345.607 
+	238.107,476.213 368.713,345.606 "/>
+</symbol>
+</svg>
 
-  <ul class="thumbnails">
-    <li>
-      <a href="#slide1"><img src="books/img/transboundary.jpg" alt=""/></a>
-    </li>
-    <li>
-      <a href="#slide2"><img src="books/img/cannes.jpg" alt="" /></a>
-    </li>
-    <li>
-      <a href="#slide3"><img src="books/img/yoldaki.jpg" alt="" /></a>
-    </li>
-    <li>
-      <a href="#slide4"><img src="books/img/esek.jpg" alt="" /></a>
-    </li>
-    <li>
-      <a href="#slide5"><img src="books/img/wave.jpg" alt="" /></a>
-    </li>
-  </ul>
-</div>
+
+<div class="slider-content">
+  
+  <div class="header-wrapper">
+    <div class="header">
+      <div class="menu-wrapper">
+        <div class="menu-txt"></div>
+      </div>
+      <div class="logo-wrapper">
+        <div class="logo"><span>o</span></div>
+      </div>
+      <div class="shop-wrapper"></div>
+    </div>
+  </div>
+  
+  <div class="number-wrapper">
+    <div class="number-count">
+      <div class="number">01</div>
+    </div>
+  </div>
+  
+  <div class="nav-wrapper">
+    <div class="nav-arrows">
+      <div class="nav-up">
+           <svg id="arrow-up">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+       </div>
+      <div class="nav-line"></div>
+      <div class="nav-down">
+         <svg id="arrow-down">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+      </div>
+    </div>
+  </div>
+  
+  <div class="slider-wrapper">
+    <div class="slider-container">                       
+      <div class="slide active" data-order="1">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">1</span>
+              <h2><span>a<br/>transboundary<br/>cinema</span></h2>
+              <span class="subtitle"></span>
+              <p class="excerpt"></p>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="books/img/transboundary.jpg" alt="" />
+          </div>
+        </div>  
+      <div class="slide" data-order="2">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">2</span>
+              <h2><span>a<br/>theif<br/>in cannes</span></h2>
+               <p class="excerpt"></p>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="books/img/cannes.jpg" alt="" />
+          </div>
+        </div>  
+      <div class="slide" data-order="3">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">3</span>
+              <h2><span>the<br/>new wave<br/>in turkey's cinema</span></h2>
+               <p class="excerpt"></p>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="books/img/wave.jpg" alt="" />
+          </div>
+        </div>  
+      <div class="slide " data-order="4">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">4</span>
+              <h2><span>yol'daki<br/>yönetmen</span></h2>
+              <p class="excerpt"></p>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="books/img/yoldaki.jpg" alt="" />
+          </div>
+        </div>
+      <div class="slide " data-order="5">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">5</span>
+              <h2><span>eşeğin<br/>oğlu</span></h2>
+              <p class="excerpt"></p>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="books/img/esek.jpg" alt="" />
+          </div>
+        </div>
+      <div class="slide " data-order="6">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">6</span>
+              <h2><span>placeholder</span></h2>
+              <p class="excerpt"></p>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="books/img/placeholder.jpg" alt="" />
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script><script  src="books/script.js"></script>
 
 </body>
 </html>
